@@ -1,4 +1,4 @@
-package vn.com.fsoft.cloudinnovation.serviceregistrar;
+package com.fsoft.jenkintest;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
-public class Ng2Select {
+public class AppTest {
 
 	public static void main(String[] args) throws InterruptedException, IOException {
 		String driverName = "Chrome";
@@ -19,7 +19,7 @@ public class Ng2Select {
 		} else if ("Firefox".equals(driverName)) {
 			driver = new FirefoxDriver();
 		} else if ("Chrome".equals(driverName)) {
-			System.setProperty("webdriver.chrome.driver", "/Users/quang/Downloads/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "D:/github/jenkin/chromedriver");
 			driver = new ChromeDriver();
 		}  	
 		
